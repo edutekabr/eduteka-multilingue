@@ -1,7 +1,7 @@
 # Eduteka Multilíngue
 Aplicação multi-idiomas com o Laravel Localization.
 
-Lembre-se:
-# Rodar o laravel com o comando "php artisan serve"
-# Rodar migrations com o comando "php artisan migrate"
-# Rodar seeders com o comando "php artisan db:seed"
+Lembre-se de rodar os seguintes comandos para testar o projetinho:
+- php artisan serve (Rodar o laravel)
+- php artisan migrate (Criar migrations)
+- php artisan db:seed (Popular migrations com as seeders)
