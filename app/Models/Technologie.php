@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
-class Technologie extends Model
+class Technologie extends Model implements TranslatableContract
 {
-    use HasFactory;
+    use HasFactory, Translatable;
 
     /**
      * The attributes that are mass assignable.
@@ -16,10 +18,12 @@ class Technologie extends Model
      */
     protected $fillable = [
         'name',
-        'description',
+        // 'description',
         'num_classes',
         'type'
     ];
+
+    public $translatedAttributes = ['description'];
 
     //Field "type"
     const FRONTEND = 1;
