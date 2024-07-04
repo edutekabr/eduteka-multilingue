@@ -10,5 +10,5 @@ class TechnologieTranslation extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $fillable = ['locale', 'description', 'tech_id'];
+    protected $fillable = ['locale', 'description', 'technologie_id'];
 }
